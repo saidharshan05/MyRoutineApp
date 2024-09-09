@@ -36,7 +36,7 @@ source .venv/bin/activate
 
 ```bash```
 
-pip install -r requirements.txt
+      pip install -r requirements.txt
 
 Set up the application for Ubuntu:
 
@@ -44,7 +44,7 @@ Set up the application for Ubuntu:
 
     ```bash```
 
-nano ~/.local/share/applications/MyRoutineApp.desktop
+      nano ~/.local/share/applications/MyRoutineApp.desktop
 
 **Add the following content:**
 
@@ -60,7 +60,7 @@ ini
     Type=Application
     Categories=Utility;
 
-        Replace /path/to/your/project/ with the actual path to the project.
+Replace /path/to/your/project/ with the actual path to the project.
 
 **Run the application:**
 
