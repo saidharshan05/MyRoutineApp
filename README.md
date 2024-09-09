@@ -68,7 +68,7 @@ ini
 
     ```bash```
 
-python app.py
+      python app.py
 
 Or launch it from the Ubuntu app menu.
 # MyRoutineApp
