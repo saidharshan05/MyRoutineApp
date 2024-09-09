@@ -22,7 +22,7 @@ MyRoutineApp is a Python-based daily routine manager application that helps user
 
 1. **Clone the repository**:
    ```bash```
-   git clone https://github.com/saidharshan01/MyRoutineApp.git
+   git clone https://github.com/saidharshan05/MyRoutineApp.git
    cd MyRoutineApp
 
 ## Set up the virtual environment:
