@@ -42,7 +42,7 @@ Set up the application for Ubuntu:
 
 Create a .desktop file to launch the app from the menu:
 
-    ```bash```
+```bash```
 
       nano ~/.local/share/applications/MyRoutineApp.desktop
 
