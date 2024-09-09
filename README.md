@@ -21,7 +21,7 @@ MyRoutineApp is a Python-based daily routine manager application that helps user
 ## Installation
 
 1. **Clone the repository**:
-   ```bash
+   ```bash```
    git clone https://github.com/saidharshan01/MyRoutineApp.git
    cd MyRoutineApp
 
@@ -29,8 +29,8 @@ MyRoutineApp is a Python-based daily routine manager application that helps user
 
 ```bash```
 
-python3 -m venv .venv
-source .venv/bin/activate
+      python3 -m venv .venv
+      source .venv/bin/activate
 
 **Install the required packages:**
 
@@ -40,7 +40,7 @@ source .venv/bin/activate
 
 Set up the application for Ubuntu:
 
-    Create a .desktop file to launch the app from the menu:
+Create a .desktop file to launch the app from the menu:
 
     ```bash```
 
