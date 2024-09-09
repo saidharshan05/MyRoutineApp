@@ -64,9 +64,9 @@ Replace /path/to/your/project/ with the actual path to the project.
 
 **Run the application:**
 
-    You can now run the application from the terminal:
+You can now run the application from the terminal:
 
-    ```bash```
+```bash```
 
       python app.py
 
