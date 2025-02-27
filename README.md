@@ -21,7 +21,8 @@ MyRoutineApp is a Python-based daily routine manager application that helps user
 ## Installation
 
 1. **Clone the repository**:
-   ```bash```
+
+ (Routine app in progress.)
    git clone https://github.com/saidharshan05/MyRoutineApp.git
    cd MyRoutineApp
 
