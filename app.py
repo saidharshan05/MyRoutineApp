@@ -6,8 +6,6 @@ from PIL import ImageGrab  # For screenshot
 #import pywhatkit as kit  # To send messages via WhatsApp
 import openai  # For fetching motivational messages
 
-# OpenAI API setup
-openai.api_key = "sk-ZkXdRvLqLkGx4C9l3wT1xUDlIdm4dwrVjJYQurpHpbT3BlbkFJEtIAiECskJDoTf9RjCZ_H_5-LJ7Rq34pdWbt06Ug8A"
 
 # Load salad suggestions from PDF
 pdf_path = "/home/dharshu-lappy/Projects/routine/files/Salads.pdf"
@@ -24,39 +22,6 @@ def toggle_task_completion(label, var):
         label.config(font=("Helvetica", 14, "overstrike"))  # Strike through task
     else:
         label.config(font=("Helvetica", 14))  # Remove strike through
-
-# Function to take a screenshot of the root window and save it
-def take_screenshot():
-    x0 = root.winfo_rootx()
-    y0 = root.winfo_rooty()
-    x1 = x0 + root.winfo_width()
-    y1 = y0 + root.winfo_height()
-    screenshot = ImageGrab.grab(bbox=(x0, y0, x1, y1))
-    screenshot.save("routine_screenshot.png")  # Save the screenshot
-
-# Function to fetch a motivational message from OpenAI
-def get_motivational_message():
-    response = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",  # Or you can use 'gpt-4' if available
-        messages=[
-            {"role": "system", "content": "You are a motivational coach."},
-            {"role": "user", "content": "Give me a short motivational message"}
-        ],
-        max_tokens=50
-    )
-    message = response['choices'][0]['message']['content'].strip()
-    return message
-
-# Function to send the screenshot and message via WhatsApp
-#def send_screenshot_via_whatsapp():
-    take_screenshot()  # Take a screenshot
-    message = get_motivational_message()  # Get motivational message
-    kit.sendwhats_image(
-        phone_no="+918152847103",  # Replace with your WhatsApp number
-        img_path="routine_screenshot.png",
-        caption=message,
-        wait_time=15
-    )
 
 # Create the main application window with full screen
 root = tk.Tk()
@@ -132,8 +97,8 @@ def update_salad():
 # Button to fetch today's salad
 next_salad_button = tk.Button(root, text="Get Today's Salad", command=update_salad, **button_style)
 next_salad_button.pack(pady=10)
-mot = tk.Button(root, text="Get Today's Salad", command=get_motivational_message, **button_style)
-mot.pack(pady=10)
+#mot = tk.Button(root, text="Get Today's Salad", command=get_motivational_message, **button_style)
+#mot.pack(pady=10)
 # Button to send screenshot and motivational message via WhatsApp
 #send_button = tk.Button(root, text="Send Screenshot & Message", command=send_screenshot_via_whatsapp, **button_style)
 #send_button.pack(pady=10)
